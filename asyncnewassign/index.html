@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+<div id="navbar">
+    <div>
+        <h2><a href="database.html">Student Database</a></h2>
+    </div>
+    <div>
+      <div class="section">
+        <div>Batch01:</div>
+        <div id="batch1">0</div>
+      </div>
+      <div class="section">
+        <div>Batch02:</div>
+        <div id="batch2">0</div>
+      </div>
+    </div>
+</div>
+<h1>Student Database Management System</h1>
+<div id="formdiv">
+  <form id="form" onsubmit="storeData(event)">
+      <input type="text" placeholder="enter name" id="name" required>
+      <input type="text"  placeholder="enter course" id="course" required>
+      <input type="text"  placeholder="enter unit" id="unit" required>
+      <input type="text"  placeholder="enter image" id="imgUrl" required>
+      <input type="text"  placeholder="enter batch" id="batch" required>
+      <input id="submit" type="Submit">
+  </form>
+</div>
+</body>
+</html>
+<script src="index.js"></script>
